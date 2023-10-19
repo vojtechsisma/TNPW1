@@ -1,0 +1,134 @@
+.bike-overlay {
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  opacity: 0.25;
+}
+
+.bike-wrapper-width {
+  position: relative;
+}
+
+.bike-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--gap-l);
+  color: var(--text-white);
+  scroll-snap-align: start;
+  max-width: 1500px;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.bike-image {
+  width: 100%;
+  object-fit: contain;
+
+  transition: all 0.25s ease-in-out;
+}
+
+.bike-image-wrapper {
+  position: relative;
+  height: 100%;
+  align-self: flex-start;
+  max-width: 800px;
+  padding: 0 var(--gap-xl);
+}
+
+.bike-image-wrapper,
+.bike-content {
+  flex: 1;
+}
+
+.bike-content {
+  padding: 0 var(--gap-xl);
+  z-index: 1;
+}
+
+.bike-wrapper h2 {
+  font-family: "Poppins", sans-serif;
+  font-family: "portico-outline", sans-serif;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.bike-wrapper h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: var(--fs-s);
+  font-weight: 100;
+  margin: 0;
+  opacity: 0.75;
+}
+
+.bike-wrapper p {
+  font-size: var(--fs-base);
+  opacity: 0.9;
+  line-height: 1.75rem;
+  margin-top: var(--gap-xxl);
+  text-align: justify;
+}
+
+.colnago {
+  background-color: var(--colnago-red);
+}
+
+.basso {
+  background-color: var(--basso-gray);
+}
+
+.trek {
+  background-color: var(--trek-black);
+}
+
+.hero {
+  background-image: url(/assets/img/hero-contact.webp);
+  scroll-snap-align: start;
+}
+
+footer {
+  scroll-snap-align: start;
+}
+
+.cta-bike-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--gap-xl);
+}
+
+@media only screen and (min-width: 900px) {
+  .bike-wrapper {
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  .bike-wrapper h2 {
+    font-size: var(--fs-jumbo);
+  }
+
+  .bike-image-wrapper {
+    padding: 0;
+  }
+
+  .cta-bike-wrapper {
+    justify-content: left;
+    margin-bottom: 0;
+  }
+
+  .bike-image {
+    width: 175%;
+    object-fit: contain;
+    position: absolute;
+    left: -75%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    transition: all 0.25s ease-in-out;
+  }
+
+  .bike-image:hover {
+    transform: translate(0%, -50%) scale(1.025);
+  }
+}

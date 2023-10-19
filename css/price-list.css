@@ -1,0 +1,60 @@
+main h1 {
+  font-size: var(--fs-xxl);
+  text-align: center;
+  letter-spacing: 0.05rem;
+  margin-top: var(--gap-giant);
+}
+
+nav a {
+  color: var(--text-black);
+}
+
+header .logo {
+  filter: invert(1);
+}
+
+main {
+  max-width: 1500px;
+  padding: var(--gap-l) var(--gap-xl);
+  color: var(--text-black);
+  margin: auto;
+}
+
+table {
+  margin: 0 auto;
+}
+
+table th {
+  background-color: var(--text-black);
+  color: var(--text-white);
+}
+
+table tr:nth-child(even) {
+  background-color: var(--text-white);
+}
+
+table .section-heading {
+  font-weight: 700;
+  padding: var(--gap-xl) var(--gap-l) var(--gap-m);
+}
+
+table td,
+table th {
+  padding: var(--gap-m) var(--gap-l);
+}
+
+table a {
+  color: var(--text-white);
+  text-decoration: none;
+}
+
+#vat {
+  text-align: center;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 900px) {
+  main {
+    padding: var(--gap-l) var(--gap-xxl);
+  }
+}

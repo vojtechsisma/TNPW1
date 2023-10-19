@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+:root {
+  --gap-s: 0.5rem;
+  --gap-m: 1rem;
+  --gap-l: 1.5rem;
+  --gap-xl: 2rem;
+  --gap-xxl: 3rem;
+  --gap-giant: 4rem;
+  --gap-jumbo: 5rem;
+
+  /* fonst sizes */
+  --fs-xs: 0.75rem;
+  --fs-s: 0.85rem;
+  --fs-base: 1rem;
+  --fs-l: 1.25rem;
+  --fs-xl: 1.5rem;
+  --fs-xxl: 2rem;
+  --fs-giant: 4rem;
+  --fs-jumbo: 5rem;
+
+  /* bikes colors */
+  --colnago-red: #700a1a;
+  --basso-gray: #bbbfca;
+  --trek-black: #210203;
+
+  /* colors */
+  --text-white: #ededed;
+  --text-black: #0f0f0f;
+  --dark-white: #e0e0e0;
+
+  --midnight-green: #0e3b43ff;
+  --myrtle-green: #357266ff;
+  --ash-gray: #a3bbadff;
+  --field-drab: #65532fff;
+  --caf-noir: #312509ff;
+}
+
+@font-face {
+  font-family: "portico-outline";
+  src: url(/assets/fonts/Portico-Outline.otf);
+}
+
+body,
+html {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  overflow: scroll;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.cta {
+  padding: 1rem 1.5rem;
+  border-radius: 10rem;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--text-white);
+  transition: all 300ms ease-in-out;
+  font-weight: 600;
+}
+
+.cta:visited {
+  color: var(--dark-white);
+}
+
+.cta-secondary {
+  border: 0.2rem solid var(--text-white);
+}
+
+.cta-secondary:visited {
+  border: 0.2rem solid var(--dark-white);
+}
+
+.cta-secondary:hover {
+  background-color: var(--text-white);
+  color: var(--text-black);
+}
+
+.cta-bike-wrapper {
+  padding: var(--gap-m) 0;
+}
+
+.cta-primary {
+  border: 0.2rem solid var(--text-white);
+  background-color: var(--text-white);
+  color: var(--text-black) !important;
+}
+
+.cta-primary:visited {
+  border: 0.2rem solid var(--dark-white);
+  background-color: var(--dark-white);
+  color: var(--text-black);
+}
+
+.cta-primary:hover {
+  border: 0.2rem solid var(--text-white);
+  background-color: transparent;
+  color: var(--text-white) !important;
+}

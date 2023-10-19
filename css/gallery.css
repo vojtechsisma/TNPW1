@@ -1,0 +1,50 @@
+main h1 {
+  font-size: var(--fs-xxl);
+  text-align: center;
+  letter-spacing: 0.05rem;
+  margin-top: var(--gap-giant);
+}
+
+nav a {
+  color: var(--text-black);
+}
+
+header .logo {
+  filter: invert(1);
+}
+
+main {
+  max-width: 1500px;
+  padding: var(--gap-l) var(--gap-xl);
+  color: var(--text-black);
+  margin: auto;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap-xl);
+  margin-bottom: var(--gap-giant);
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 700px;
+}
+
+@media only screen and (min-width: 700px) {
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  main {
+    padding: var(--gap-l) var(--gap-xxl);
+  }
+}

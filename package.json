@@ -1,0 +1,11 @@
+{
+  "name": "tnpw-projekt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:vojtechsisma/TNPW1.git",
+  "author": "Vojtěch Šišma <v.sisma@nextap.eu>",
+  "license": "MIT",
+  "dependencies": {
+    "lightgallery": "^2.7.2"
+  }
+}

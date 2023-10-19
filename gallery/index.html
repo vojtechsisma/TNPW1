@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bike SOS</title>
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/gallery.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/node_modules/lightgallery/css/lightgallery-bundle.min.css"
+    />
+    <script src="/node_modules/lightgallery/lightgallery.min.js"></script>
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <header>
+        <a href="/"
+          ><img src="/assets/img/logo.svg" class="logo" alt="Bike SOS logo"
+        /></a>
+        <nav>
+          <ul>
+            <li><a href="/">About</a></li>
+            <li><a href="/bikes">Bikes</a></li>
+            <li><a href="/price-list">Price list</a></li>
+            <li><a href="/gallery/">Gallery</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <main>
+      <h1>Gallery</h1>
+      <section id="lightgallery" class="gallery-grid">
+        <a href="/assets/img/service1.webp">
+          <img alt="img2" src="/assets/img/service1.webp" />
+        </a>
+        <a href="/assets/img/service2.webp">
+          <img alt="img2" src="/assets/img/service2.webp" />
+        </a>
+        <a href="/assets/img/service3.webp">
+          <img alt="img2" src="/assets/img/service3.webp" />
+        </a>
+        <a href="/assets/img/service4.webp">
+          <img alt="img2" src="/assets/img/service4.webp" />
+        </a>
+        <a href="/assets/img/service5.webp">
+          <img alt="img2" src="/assets/img/service5.webp" />
+        </a>
+        <a href="/assets/img/hero-bikes.webp">
+          <img alt="img2" src="/assets/img/hero-bikes.webp" />
+        </a>
+        <a href="/assets/img/hero.webp">
+          <img alt="img2" src="/assets/img/hero.webp" />
+        </a>
+        <a href="/assets/img/hero-contact.webp">
+          <img alt="img2" src="/assets/img/hero-contact.webp" />
+        </a>
+        <a href="/assets/img/bike.webp">
+          <img alt="img2" src="/assets/img/bike.webp" />
+        </a>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-main">
+        <div class="footer-logo">
+          <a href="/"
+            ><img src="/assets/img/logo.svg" class="logo" alt="Bike SOS logo"
+          /></a>
+        </div>
+        <div class="footer-contact">
+          <span
+            ><span class="material-symbols-outlined">call</span>
+            <a href="tel:123456789">123 456 789</a></span
+          >
+          <span class="separator">|</span>
+          <span
+            ><span class="material-symbols-outlined">location_on</span>Strada
+            del Passo dello Stelvio 6, 39029 Stelvio BZ, Italy</span
+          >
+          <span class="separator">|</span>
+          <span
+            ><span class="material-symbols-outlined">mail</span>
+            <a href="mailto:example@example.com">example@example.com</a></span
+          >
+        </div>
+      </div>
+      <div class="footer-info">
+        <div><a href="mailto:sismavo1@uhk.cz">&copy; Vojtěch Šišma</a></div>
+        <p class="unsplash-credit">
+          images: <a href="https://unsplash.com/">unsplash</a>
+        </p>
+        <p lang="cs">Tento projekt je zápočtovým projektem předmětu TNPW1</p>
+        <p>This project is a credit project for TNPW1</p>
+        <p>Date of last modification: 19.10.2023</p>
+      </div>
+    </footer>
+  </body>
+  <script type="text/javascript">
+    lightGallery(document.getElementById("lightgallery"), {
+      download: false,
+      getCaptionFromTitleOrAlt: false,
+    });
+  </script>
+</html>
