@@ -44,7 +44,7 @@ nav li {
 }
 
 nav a {
-  color: var(--text-white);
+  color: white;
   font-weight: 700;
   text-decoration: none;
   letter-spacing: 0.4rem;
@@ -73,7 +73,7 @@ nav a {
 }
 
 .hero-content {
-  color: var(--text-white);
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
