@@ -69,7 +69,7 @@
   opacity: 0.9;
   line-height: 1.75rem;
   margin-top: var(--gap-xxl);
-  text-align: justify;
+  text-align: left;
 }
 
 .colnago {
