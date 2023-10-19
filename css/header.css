@@ -21,7 +21,7 @@ header .logo {
 }
 
 .hero {
-  background-image: url(/assets/img/hero-bikes.webp);
+  background-image: url(/assets/img/hero-bikes.jpg);
   background-position: center;
   background-size: cover;
   min-height: 100vh;
