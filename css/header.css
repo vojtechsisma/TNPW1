@@ -54,11 +54,15 @@ nav li {
 }
 
 nav a {
-  color: white;
+  color: var(--text-white);
   font-weight: 700;
   text-decoration: none;
   letter-spacing: 0.4rem;
   text-transform: uppercase;
+}
+
+nav a:visited {
+  color: var(--dark-white);
 }
 
 .hero-overlay {

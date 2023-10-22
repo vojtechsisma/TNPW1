@@ -2,6 +2,10 @@ nav a {
   color: var(--text-black);
 }
 
+nav a:visited {
+  color: var(--kettensage-green);
+}
+
 header .logo {
   filter: invert(1);
 }
