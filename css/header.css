@@ -29,6 +29,16 @@ header .logo {
   z-index: 0;
   display: flex;
   flex-direction: column;
+  position: absolute;
+}
+
+.bg-black {
+  background-color: black;
+  min-height: 100vh;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 nav ul {
@@ -141,6 +151,10 @@ nav a {
   }
 
   .hero {
+    height: 100vh;
+  }
+
+  .bg-black {
     height: 100vh;
   }
 
